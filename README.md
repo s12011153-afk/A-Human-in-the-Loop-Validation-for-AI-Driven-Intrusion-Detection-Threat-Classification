@@ -107,7 +107,7 @@ Approximately 35 GB, 63,195,145 records across 25 classes.
 
 ## Reproducing the reported results
 
-1. Open `HITL_IDS_Pipeline_v2.ipynb` and select the `ms_env` kernel.
+1. Open `HITL_IDS_Pipeline_v3_realistic_reproduction.ipynb` and select the `ms_env` kernel.
 2. In **Section 2 — Configuration**, confirm:
 
 ```python
