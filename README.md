@@ -7,7 +7,7 @@ Implementation and experimental artefacts for a closed-loop human-in-the-loop va
 framework for multiclass network intrusion detection. An XGBoost classifier produces calibrated
 confidence scores and SHAP attributions; a decision gate routes the least-confident predictions
 for analyst adjudication within a fixed capacity budget; adjudicated labels are returned to the
-model through a retraining cycle.
+model through a retraining cycle. SHAP attributions support explanation and diagnostic analysis within the confidence-routed subset; they do not independently expand the routed set in the reported implementation.
 
 ---
 
@@ -127,8 +127,7 @@ runs.
 degradation experiment in Section 19 (roughly 94 minutes; 80 models trained). Subsequent runs are
 faster: the population scan and the sampled dataset are both cached to disk.
 
-**Sensitivity analysis.** Set `ANALYST_ERROR_MODEL = "pessimistic"` and re-run Sections 12–17 only.
-This writes to a new run directory, leaving the primary results intact.
+**Sensitivity analysis.** Sensitivity analysis. Create a separate copy of the notebook and set ANALYST_ERROR_MODEL = "pessimistic". If the label-noise experiments should also use the pessimistic reviewer, set NOISE_ANALYST_MODEL = "pessimistic". Restart the kernel and run all cells to generate a complete timestamped run without overwriting the primary realistic results.
 
 **Comparison profile.** Set `SAMPLING_PROFILE = "balanced"` and run from Section 2. A separate
 sample cache is maintained per profile.
