@@ -37,18 +37,18 @@ Files written by `HITL_IDS_Pipeline_v2.ipynb` to `results/`.
 
 | File | Dissertation reference |
 |---|---|
-| `fig1_confusion_baseline.png` | Figure 5.1 |
-| `fig2_calibration.png` | Figure 5.2 |
-| `fig3_shap_global.png` | Figure 5.3 |
-| `fig4_budget_tradeoff.png` | Figure 5.4 |
-| `fig5_noise_multiseed.png` | Figure 5.5 |
+| `fig1_confusion_baseline.png` | Figure 4 |
+| `fig2_calibration.png` | Figure 5 |
+| `fig3_shap_global.png` | Figure 6 |
+| `fig4_budget_tradeoff.png` | Figure 7 |
+| `fig5_noise_multiseed.png` | Figure 8 |
 
 ## Runs reported in the dissertation
 
 | Run | Purpose |
 |---|---|
-| `run_unbalanced_<timestamp>` | Primary results. Proportional sampling, realistic analyst error model. Source of all figures and of Tables 5.1–5.13. |
-| `run_unbalanced_<timestamp>` (second) | Sensitivity analysis. Pessimistic analyst error model. Source of Table 5.14. |
+| `run_unbalanced_<timestamp>` | Primary results. Proportional sampling, realistic analyst error model. Source of all figures and of Tables 3-15. |
+| `run_unbalanced_<timestamp>` (second) | Sensitivity analysis. Pessimistic analyst error model. Source of Table 5.16. |
 | `run_balanced_<timestamp>` | Comparison profile, referenced in Section 6.7. |
 
 Record the exact directory names of the runs used for the submitted figures, and archive those
